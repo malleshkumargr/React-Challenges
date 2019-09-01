@@ -6,7 +6,7 @@ export default class AddTask extends React.Component {
         super()
         this.state = {
             name: '',
-            tasks: [],
+            tasks: ['task 1'],
         }
     }
 
