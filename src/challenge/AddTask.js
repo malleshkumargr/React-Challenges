@@ -10,9 +10,14 @@ export default class AddTask extends React.Component {
         }
     }
 
-    handleSubmit = () => {
+    handleSubmit = (e) => {
         console.log('AddTask - handleSubmit')
-
+        e.preventDefault()
+        const projectData = {
+            name: this.state.name,
+            tasks: this.state.tasks
+        }
+        console.log(projectData)
     }
 
     handleAddTask = () => {
